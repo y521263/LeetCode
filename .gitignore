@@ -3,6 +3,6 @@
 *.suo
 *.vc*
 *.opensdf
-*/Debug/
-*/Release/
+Debug/
+Release/
 
