@@ -3,6 +3,7 @@
 *.suo
 *.vc*
 *.opensdf
+*.exe
 Debug/
 Release/
 
