@@ -8,6 +8,8 @@ bool isDigit(const char c)
 {
 	return ('0' <= c && c <= '9');
 }
+
+//optimization: using iterator 
 bool isNumber(string s){
 	s.erase(0, s.find_first_not_of(" "));
 	s.erase(s.find_last_not_of(" ") + 1);
@@ -47,7 +49,8 @@ bool isNumber(string s){
 	if (loc == string::npos) return true;
 	return false;
 }
-int main(){
+int main()
+{
 	string str = "-.1";// 5.e .1 0.1 
 	if (isNumber(str))
 	{
@@ -56,7 +59,6 @@ int main(){
 	else
 	{
 		cout << "not Number \n";
-
 	}
 	return 0;
 }
