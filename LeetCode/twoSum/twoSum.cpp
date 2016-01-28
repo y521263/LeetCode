@@ -2,7 +2,7 @@
 #include<vector>
 #include<map>
 using namespace std;
-// algo 1
+// algo 1 简单粗暴
 //vector<int> twoSum(vector<int>& nums, int target)
 //{
 //	map<int, int> tmpmap;
@@ -30,7 +30,7 @@ using namespace std;
 //	}
 //	return ret;
 //}
-// algo 2
+// algo 2 稍微优化一点
 vector<int> twoSum(vector<int>& nums, int target)
 {
 	multimap<int, int> tmpmap;
