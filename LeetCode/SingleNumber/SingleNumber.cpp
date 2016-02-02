@@ -31,6 +31,7 @@ int singleNumber(vector<int>& nums) {
     }
     return s;
 }
+
 int main()
 {
     return 0;
