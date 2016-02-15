@@ -104,6 +104,7 @@ vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
     {
         for (int j = 0; j < board[i].size(); j++)
         {
+            //过滤不是word开头的查找 小优化
             if (tmpset.find(board[i][j]) == tmpset.end()) continue;
             findWords2(board, root.getroot(),i, j, result);
             //findWords2(board, root.getroot(),i, j, result,prefixstrset);
