@@ -31,7 +31,7 @@ string shortestPalindrome(string s) {
 }
 int main()
 {
-    //vector<int> vec = KMP("abcd");
-    string s = shortestPalindrome("aacecaaa");
+    vector<int> vec = KMP("aab");
+    //string s = shortestPalindrome("aab");
     return 0;
 }
