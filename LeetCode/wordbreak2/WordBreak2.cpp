@@ -37,10 +37,27 @@ vector<string> wordBreak(string s, unordered_set<string>& wordDict) {
 */
 /*
 动态规划法
+s[i,j]表示s串[i,j]区间的字符串 : result[i] = s[i,j] + {result[j]} 这里的 {result[j]} 是个vector  有好多个 字符串
+
+s = "catsanddog"
+dict = ["cat", "cats", "and", "sand", "dog"].
+倒过来看
 
 */
 vector<string> wordBreak(string s, unordered_set<string>& wordDict) {
-
+    vector< vector<string> > result;
+    for (int i = s.size() - 1; i >= 0; i--)
+    {
+        for (int j = i + 1; j < s.size(); j++)
+        {
+            string wd = s.substr(i, j - i);
+            if (wordDict.find(wd) != wordDict.end())
+            {
+                if ()
+                result[i].push_back(wd);
+            }
+        }
+    }
 }
 
 int main()
