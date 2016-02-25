@@ -4,6 +4,8 @@
 *.vc*
 *.opensdf
 *.exe
+*.xcodeproj
+*.xcworkspace
 Debug/
 Release/
 
