@@ -8,4 +8,5 @@
 *.xcworkspace
 Debug/
 Release/
+build/
 
